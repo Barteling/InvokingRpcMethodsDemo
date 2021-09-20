@@ -10,7 +10,7 @@ namespace InvokingRpcMethodsDemo
         private static async Task Main(string[] args)
         {
             using AdsClient client = new AdsClient(); // New instance of the TwinCAT ADS client.
-            client.Connect("192.168.250.2.1.1", 851);
+            client.Connect("123.123.123.123.1.1", 851);
             if (!client.IsConnected)
             {
                 Console.WriteLine("Cannot connect to the PLC");
