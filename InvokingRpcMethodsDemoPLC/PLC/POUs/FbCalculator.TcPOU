@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="FbCalculator" Id="{5c4ee6bf-053a-4b6e-bea8-c2082c4df868}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FbCalculator
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="Sum" Id="{84f43510-45e4-442c-bebe-0c11ddd676e0}">
+      <Declaration><![CDATA[{attribute 'TcRpcEnable'}
+METHOD PUBLIC Sum : LREAL
+VAR_INPUT
+    Input1 : LREAL;
+    Input2 : LREAL;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[Sum := Input1 + Input2;]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FbCalculator">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FbCalculator.Sum">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
